@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: system-ui;
-  background: #070b18;
+  background: #0a0f1f;
   color: #e5e7eb;
 }
 
@@ -9,56 +9,98 @@ body {
 .nav {
   display: flex;
   justify-content: space-between;
-  padding: 22px 50px;
-  background: rgba(10,15,30,0.8);
+  padding: 22px 60px;
+  background: rgba(10,15,30,0.85);
   backdrop-filter: blur(10px);
 }
 
+.logo {
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+.links {
+  display: flex;
+  gap: 12px;
+}
+
 .links a {
-  margin-left: 18px;
-  color: #9ca3af;
+  padding: 10px 16px;
+  border-radius: 999px;
   text-decoration: none;
+  color: #cbd5e1;
+  font-size: 14px;
+  border: 1px solid transparent;
 }
 
 .links a:hover {
+  border: 1px solid rgba(255,255,255,0.2);
   color: white;
 }
 
 /* HERO */
 .hero {
-  padding: 160px 20px;
+  padding: 170px 20px;
   text-align: center;
 }
 
 .hero-inner {
-  max-width: 850px;
+  max-width: 900px;
   margin: auto;
 }
 
 .hero h1 {
-  font-size: 52px;
+  font-size: 54px;
+  line-height: 1.05;
 }
 
 .hero p {
   color: #9ca3af;
-  margin-top: 10px;
+  margin-top: 14px;
+  font-size: 18px;
 }
 
-/* SMALL HERO */
-.hero-small {
-  padding: 120px 20px 40px;
+/* PAGE HERO */
+.page-hero {
+  padding: 120px 20px 60px;
   text-align: center;
 }
 
-/* BUTTON */
+.page-hero h1 {
+  font-size: 42px;
+}
+
+/* BUTTONS */
+.btn-row {
+  margin-top: 30px;
+}
+
 .btn {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 14px 24px;
-  background: linear-gradient(135deg,#6366f1,#38bdf8);
+  padding: 14px 22px;
   border-radius: 12px;
-  color: white;
   text-decoration: none;
+  display: inline-block;
+  margin: 6px;
+}
+
+.primary {
+  background: linear-gradient(135deg,#6366f1,#38bdf8);
+  color: white;
+}
+
+.secondary {
+  border: 1px solid #334155;
+  color: white;
+}
+
+/* SECTION */
+.section {
+  padding: 100px 20px;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
 }
 
 /* GRID */
@@ -68,8 +110,8 @@ body {
   gap: 20px;
 }
 
-/* PROCESS */
-.process-grid {
+/* STEPS */
+.steps {
   display: grid;
   grid-template-columns: repeat(2,1fr);
   gap: 20px;
@@ -83,23 +125,7 @@ body {
   border-radius: 14px;
 }
 
-/* SECTION */
-.section {
-  padding: 90px 20px;
-}
-
-.center {
-  text-align: center;
-}
-
-/* CTA */
-.cta {
-  text-align: center;
-  padding: 120px 20px;
-  background: rgba(255,255,255,0.02);
-}
-
-/* FLOATING BUTTON */
+/* FLOATING */
 .floating {
   position: fixed;
   bottom: 20px;
@@ -118,9 +144,8 @@ footer {
   color: #6b7280;
 }
 
-/* MOBILE */
 @media(max-width:768px){
   .grid { grid-template-columns: 1fr; }
-  .process-grid { grid-template-columns: 1fr; }
+  .steps { grid-template-columns: 1fr; }
   .hero h1 { font-size: 36px; }
 }
