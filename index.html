@@ -17,73 +17,83 @@
       <a href="index.html">Home</a>
       <a href="approach.html">Approach</a>
       <a href="about.html">About</a>
+      <a href="case-studies.html">Case Studies</a>
       <a href="contact.html">Contact</a>
     </nav>
   </div>
 </header>
 
-<section class="hero">
+<a class="floating-btn" href="contact.html">Book Search</a>
+
+<section class="hero reveal">
   <div class="container">
-    <h2>Elite Executive Search for Pharma & Biotech Leaders</h2>
-    <p>We help companies hire the top 1% of executive talent—faster, confidentially, and with precision.</p>
+    <h2>Executive Search for Pharma & Biotech Leaders</h2>
+    <p>We identify and place the top 1% of executive talent across life sciences organizations.</p>
     <a class="btn" href="contact.html">Request Executive Search</a>
   </div>
 </section>
 
-<section class="stats">
+<section class="logos reveal">
+  <div class="container logo-strip">
+    <div>BioPharma</div>
+    <div>GenTech</div>
+    <div>MedCore</div>
+    <div>NovaBio</div>
+  </div>
+</section>
+
+<section class="stats reveal">
   <div class="container stat-grid">
     <div class="stat">
       <h3>150+</h3>
       <p>Executive Placements</p>
     </div>
-
     <div class="stat">
       <h3>USA</h3>
-      <p>Nationwide Search</p>
+      <p>National Coverage</p>
     </div>
-
     <div class="stat">
       <h3>Top 1%</h3>
-      <p>Talent Network</p>
+      <p>Passive Talent Network</p>
     </div>
   </div>
 </section>
 
-<section class="section">
+<section class="section reveal">
   <div class="container">
     <h2>What We Deliver</h2>
 
     <div class="grid">
-      <div class="card">C-Suite Executive Search</div>
-      <div class="card">Confidential Hiring Process</div>
-      <div class="card">Deep Pharma & Biotech Network</div>
+      <div class="card">C-Suite & VP Search with precision targeting</div>
+      <div class="card">Confidential retained executive recruitment</div>
+      <div class="card">Global pharma & biotech leadership network</div>
     </div>
   </div>
 </section>
 
-<section class="section light">
+<section class="cta reveal">
   <div class="container">
-    <h2>Why Companies Choose Us</h2>
-
-    <div class="grid">
-      <div class="card">Fast Access to Passive Talent</div>
-      <div class="card">Industry-Specific Expertise</div>
-      <div class="card">High-Accuracy Candidate Matching</div>
-    </div>
-  </div>
-</section>
-
-<section class="cta">
-  <div class="container">
-    <h2>Need Executive Talent?</h2>
-    <p>We work with companies where the next hire cannot be a mistake.</p>
-    <a class="btn" href="contact.html">Start a Search</a>
+    <h2>Need Executive Leadership Talent?</h2>
+    <p>We help companies hire leaders who shape the future of healthcare.</p>
+    <a class="btn" href="contact.html">Start Search</a>
   </div>
 </section>
 
 <footer>
   <p>© 2026 Rausch Executive Search</p>
 </footer>
+
+<script>
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if(entry.isIntersecting){
+      entry.target.classList.add("show");
+    }
+  });
+});
+
+document.querySelectorAll(".reveal").forEach(el => observer.observe(el));
+</script>
 
 </body>
 </html>
