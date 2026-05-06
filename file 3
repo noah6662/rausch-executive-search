@@ -1,1 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About</title>
+<link rel="stylesheet" href="style.css">
+<meta name="description" content="About Rausch Executive Search and founder Max Rausch.">
+</head>
 
+<body>
+
+<header>
+  <div class="container nav">
+    <h1>About</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="approach.html">Approach</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="section">
+  <div class="container">
+
+    <h2>Rausch Executive Search</h2>
+    <p>
+      A retained executive search firm specializing in pharmaceutical and biotechnology leadership placements.
+      We work with startups to global enterprises across the United States.
+    </p>
+
+    <div class="card">
+      <h3>Why Clients Choose Us</h3>
+      <ul>
+        <li>Deep pharma & biotech expertise</li>
+        <li>Strong executive network</li>
+        <li>150+ successful placements</li>
+        <li>Confidential search process</li>
+      </ul>
+    </div>
+
+    <h2>Founder</h2>
+    <p>
+      Max Rausch has over a decade of executive recruiting experience, leading searches from Director to C-suite level across global biotech organizations.
+    </p>
+
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Rausch Executive Search</p>
+</footer>
+
+</body>
+</html>
