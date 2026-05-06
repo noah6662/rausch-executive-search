@@ -240,5 +240,51 @@ footer {
   .nav {
     flex-direction: column;
     gap: 10px;
+    .logo {
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+/* STATS SECTION */
+.stats {
+  background: #0b1220;
+  color: white;
+  padding: 70px 0;
+}
+
+.stat-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  text-align: center;
+}
+
+.stat h3 {
+  font-size: 32px;
+  color: #60a5fa;
+}
+
+.stat p {
+  opacity: 0.8;
+}
+
+/* TYPING EFFECT (simple modern feel) */
+.typing {
+  overflow: hidden;
+  border-right: 2px solid white;
+  white-space: nowrap;
+  animation: typing 3s steps(40, end), blink 0.8s infinite;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink {
+  50% { border-color: transparent }
+}
   }
 }
