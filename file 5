@@ -1,1 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body {
+  font-family: system-ui, Arial, sans-serif;
+  color: #0f172a;
+  background: #fff;
+  line-height: 1.6;
+}
+
+/* Layout */
+.container {
+  width: 92%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* NAV */
+header {
+  position: sticky;
+  top: 0;
+  background: white;
+  border-bottom: 1px solid #eee;
+  z-index: 100;
+  animation: fadeDown 0.5s ease;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 0;
+}
+
+nav a {
+  margin-left: 16px;
+  text-decoration: none;
+  color: #334155;
+  transition: 0.2s;
+}
+
+nav a:hover {
+  color: #2563eb;
+}
+
+/* HERO */
+.hero {
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: white;
+  text-align: center;
+  padding: 120px 20px;
+}
+
+.hero h2 {
+  font-size: 44px;
+  animation: fadeUp 0.8s ease;
+}
+
+.hero p {
+  margin-top: 12px;
+  opacity: 0.85;
+  animation: fadeUp 1s ease;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 22px;
+  padding: 12px 22px;
+  background: #2563eb;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+}
+
+/* SECTIONS */
+.section {
+  padding: 80px 0;
+}
+
+.light {
+  background: #f8fafc;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin-top: 20px;
+}
+
+.card {
+  padding: 20px;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+/* STEPS */
+.steps .step {
+  margin-bottom: 14px;
+  padding: 16px;
+  border-left: 4px solid #2563eb;
+  background: #f8fafc;
+  border-radius: 8px;
+}
+
+/* FORM */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.form input,
+.form textarea {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.form button {
+  padding: 12px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 30px;
+  border-top: 1px solid #eee;
+  color: #64748b;
+}
+
+/* ANIMATIONS */
+@keyframes fadeUp {
+  from {opacity: 0; transform: translateY(20px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+@keyframes fadeDown {
+  from {opacity: 0; transform: translateY(-10px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero h2 {
+    font-size: 30px;
+  }
+
+  .nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
